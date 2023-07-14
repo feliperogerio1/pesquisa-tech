@@ -3,32 +3,57 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
         <title>Pesquisa sobre desenvolvedores</title>
-        <!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/images/">
     </head>
     <body>
-        <h1>Pesquisa sobre mercado de desenvolvedores</h1>
-        <h2>Buscamos entender o cenário atual de tecnologia</h2>
-        <form>
-            <label for="name">Nome</label>
-            <input type="text" id="name" placeholder="Digite seu nome">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Digite seu e-mail">
-            <label for="age">Idade</label>
-            <input type="number" id="age" placeholder="Digite sua idade">
-            <label for="ocupação">Qual o seu nível atual?</label>
-            <select>
-                <option>Buscando a primeira oportunidade</option>
-                <option>Estagiário</option>
-                <option>Júnior</option>
-                <option>Pleno</option>
-                <option>Sênior</option>
-            </select>
-            <label for="area">Qual área atua ou busca atuar?(Selecione quantos achar necessário)</label> 
-            <input type="checkbox">Web 
-            <input type="checkbox">Mobile
-            <input type="checkbox">Desktop
-        </form>
+        <div class="container">
+            <header class="header">
+                <h1>Pesquisa sobre mercado de desenvolvedores</h1>
+                <h2>Buscamos entender o cenário atual de tecnologia</h2>
+            </header>
+            <div class="card">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" placeholder="Digite seu nome" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Idade</label>
+                        <input type="number" id="age" placeholder="Digite sua idade">
+                    </div>
+                    <div class="form-group2">
+                    <label class="block">Qual a sua situação atual na área?</label>
+                    <select id="select">
+                        <option value="1" class="option">Buscando a primeira oportunidade</option>
+                        <option value="2" class="option">Estagiário</option>
+                        <option value="3" class="option">Júnior</option>
+                        <option value="4" class="option">Pleno</option>
+                        <option value="5" class="option">Sênior</option>
+                    </select>
+                    </div>
+                    <div class="form-group2">
+                    <label class="block">Há quanto tempo está na área de tecnologia?</label>
+                        <label for="radio1"><input type="radio" name="radio" class="inline" id="radio1">Menos de um ano</label>
+                        <label for="radio2"><input type="radio" name="radio" class="inline">Entre um ano e três anos</label>
+                        <label for="radio3"><input type="radio" name="radio" class="inline">Mais de três anos</label>
+                    </label>
+                    </div>
+                    <div class="form-group2">
+                    <label class="block">Qual área atua ou busca atuar?(Selecione quantos achar necessário)</label> 
+                    <label for="web"><input type="checkbox" class="inline">Web</label> 
+                    <label for="mobile"><input type="checkbox" class="inline">Mobile</label>
+                    <label for="desktop"><input type="checkbox" class="inline">Desktop</label>
+                    </div>
+                    <label for="textarea">Como tem sido sua experiência na carreira de tecnologia?<textarea id="textarea" placeholder="Deixe seu comentário."></textarea></label>   
+                    <label for="submit"><input type="button" value="Enviar" id="submit"></label>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
